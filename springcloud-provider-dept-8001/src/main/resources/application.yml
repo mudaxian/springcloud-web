@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+mybatis:
+  type-aliases-package: com.mudaxian.springcloud.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+#  config-location: classpath:mybatis/mybatis-config.xml
+
+spring:
+  application:
+    name: springcloud-provider-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/study?useSSL=true&useUnicode=true&characterEnding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
