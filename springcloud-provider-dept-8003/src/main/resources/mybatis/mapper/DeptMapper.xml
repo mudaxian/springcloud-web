@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mudaxian.springcloud.dao.DeptDao">
+    <select id="queryAll" resultType="Dept">
+        select *
+        from study3.dept;
+    </select>
+    <select id="queryDeptByID" parameterType="int" resultType="Dept">
+        select *
+        from study3.dept where deptno = #{id};
+    </select>
+    <insert id="addDept" parameterType="String">
+        insert into study3.dept(deptname)
+        values (#{deptname});
+    </insert>
+</mapper>

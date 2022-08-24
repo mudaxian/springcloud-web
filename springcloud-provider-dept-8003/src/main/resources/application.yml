@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8003
 
 mybatis:
   type-aliases-package: com.mudaxian.springcloud.pojo
@@ -13,7 +13,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
     password: 123456
-    url: jdbc:mysql://localhost:3306/study?useSSL=true&useUnicode=true&characterEnding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/study3?useSSL=true&useUnicode=true&characterEnding=UTF-8&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 eureka:
@@ -21,7 +21,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://127.0.0.1:7002/eureka/
   instance:
-    instance-id: springcloud-provider-dept8001
+    instance-id: springcloud-provider-dept8003
 
 info:
   app.name: 牟文豪

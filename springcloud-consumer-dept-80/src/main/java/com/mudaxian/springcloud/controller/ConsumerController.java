@@ -14,7 +14,7 @@ import java.util.List;
 public class ConsumerController {
     @Autowired
     RestTemplate restTemplate;
-    static final String REST_URL_PREFIX = "http://localhost:8001";
+    static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
 
     @RequestMapping("/query/list")
     private List<Dept> queryAll(){
